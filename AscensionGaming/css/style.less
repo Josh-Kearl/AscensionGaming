@@ -8,6 +8,7 @@
   border: 5px #f1dbce solid;
   border-radius: 5px 5px 0 0;
   padding: 5px;
+  box-shadow: 10px 10px 40px -6px rgba(0, 0, 0, 1);
 }
 
 html {
@@ -15,53 +16,71 @@ html {
   padding: 0;
   width: 100%;
   height: 100%;
+  background: #1d2e48;
   body {
-    .main-container {
-      box-sizing: content-box;
-      padding: 0;
-      display: flex;
-      .backgroundStyles;
-      .leftMenu {
+    height: 100%;
+    .backgroundContainer {
+      background: #546c76;
+      border-radius: 5px 5px 5px 5px;
+      height: 100%;
+      .main-container {
         .mainBorderStyles;
-        border-style: none solid none solid;
-        border-radius: 0;
+        .backgroundStyles;
+        margin: 15px 0 15px 0;
+        box-sizing: content-box;
         display: flex;
-        flex-flow: column;
-      }
-      .mainContent {
-        padding-left: 15px;
-        display: flex;
-        flex-flow: column wrap;
-        margin: auto;
-        align-items: center;
-        .cover {
-          margin: 10%;
-          box-sizing: border-box;
-          .companyTitle {
-            box-sizing: content-box;
+        border-radius: 5px 5px 5px 5px;
+        height: 80%;
+        .leftMenu {
+          .mainBorderStyles;
+          border-style: none solid none none;
+          border-radius: 0;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          .popGames {
+
           }
         }
-        .features{
-          margin: 10%;
-          box-sizing: border-box;
+        .mainContent {
+          text-align: center;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          .cover {
+            box-sizing: border-box;
+            .companyTitle {
+              box-sizing: content-box;
+            }
+          }
+          .features {
+            box-sizing: border-box;
+            margin: 5px;
+          }
         }
       }
-    }
-    header {
-      margin: auto;
-      .mainBorderStyles;
-      background-color: #d9c299;
-      display: flex;
-      justify-content: space-between;
-      box-shadow: 10px 10px 40px -6px rgba(0, 0, 0, 1);
-      .logobox {
-        color: #162938;
-      }
-      nav {
-        .myLink {
-          margin-right: 10px;
+      header {
+        margin: auto;
+        .mainBorderStyles;
+        background-color: #d9c299;
+        display: flex;
+        justify-content: space-between;
+        .logobox {
           color: #162938;
         }
+        nav {
+          .myLink {
+            margin-right: 10px;
+            color: #162938;
+          }
+        }
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        .mainBorderStyles;
+        .backgroundStyles;
+        border-radius: 0 0 5px 5px;
       }
     }
   }

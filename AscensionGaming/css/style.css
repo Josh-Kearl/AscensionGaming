@@ -8,63 +8,92 @@
   border: 5px #f1dbce solid;
   border-radius: 5px 5px 0 0;
   padding: 5px;
+  box-shadow: 10px 10px 40px -6px #000000;
 }
 html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  background: #1d2e48;
 }
-html body .main-container {
-  box-sizing: content-box;
-  padding: 0;
-  display: flex;
+html body {
+  height: 100%;
+}
+html body .backgroundContainer {
+  background: #546c76;
+  border-radius: 5px 5px 5px 5px;
+  height: 100%;
+}
+html body .backgroundContainer .main-container {
+  border: 5px #f1dbce solid;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  box-shadow: 10px 10px 40px -6px #000000;
   background: #2d3450 url("images/blueBackground.jpg") center repeat;
   -webkit-background-size: cover;
   background-size: cover;
   color: #f0ffff;
+  margin: 15px 0 15px 0;
+  box-sizing: content-box;
+  display: flex;
+  border-radius: 5px 5px 5px 5px;
+  height: 80%;
 }
-html body .main-container .leftMenu {
+html body .backgroundContainer .main-container .leftMenu {
   border: 5px #f1dbce solid;
   border-radius: 5px 5px 0 0;
   padding: 5px;
-  border-style: none solid none solid;
+  box-shadow: 10px 10px 40px -6px #000000;
+  border-style: none solid none none;
   border-radius: 0;
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
 }
-html body .main-container .mainContent {
-  padding-left: 15px;
+html body .backgroundContainer .main-container .mainContent {
+  text-align: center;
   display: flex;
   flex-flow: column wrap;
-  margin: auto;
-  align-items: center;
+  justify-content: space-between;
 }
-html body .main-container .mainContent .cover {
-  margin: 10%;
+html body .backgroundContainer .main-container .mainContent .cover {
   box-sizing: border-box;
 }
-html body .main-container .mainContent .cover .companyTitle {
+html body .backgroundContainer .main-container .mainContent .cover .companyTitle {
   box-sizing: content-box;
 }
-html body .main-container .mainContent .features {
-  margin: 10%;
+html body .backgroundContainer .main-container .mainContent .features {
   box-sizing: border-box;
+  margin: 5px;
 }
-html body header {
+html body .backgroundContainer header {
   margin: auto;
   border: 5px #f1dbce solid;
   border-radius: 5px 5px 0 0;
   padding: 5px;
+  box-shadow: 10px 10px 40px -6px #000000;
   background-color: #d9c299;
   display: flex;
   justify-content: space-between;
-  box-shadow: 10px 10px 40px -6px #000000;
 }
-html body header .logobox {
+html body .backgroundContainer header .logobox {
   color: #162938;
 }
-html body header nav .myLink {
+html body .backgroundContainer header nav .myLink {
   margin-right: 10px;
   color: #162938;
+}
+html body .backgroundContainer footer {
+  display: flex;
+  justify-content: center;
+  border: 5px #f1dbce solid;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  box-shadow: 10px 10px 40px -6px #000000;
+  background: #2d3450 url("images/blueBackground.jpg") center repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #f0ffff;
+  border-radius: 0 0 5px 5px;
 }
