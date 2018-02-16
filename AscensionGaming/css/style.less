@@ -1,5 +1,5 @@
 .backgroundStyles {
-  background: #2d3450 url("images/blueBackground.jpg") center repeat;
+  background: #2d3450 url("../images/blueBackground.jpg") center repeat;
   -webkit-background-size: cover;
   background-size: cover;
   color: #f0ffff;
@@ -9,6 +9,10 @@
   border-radius: 5px 5px 0 0;
   padding: 5px;
   box-shadow: 10px 10px 40px -6px rgba(0, 0, 0, 1);
+}
+.responsiveImg {
+  max-width: 100%;
+  height: auto;
 }
 
 html {
@@ -20,9 +24,10 @@ html {
   body {
     height: 100%;
     .backgroundContainer {
+
       background: #546c76;
       border-radius: 5px 5px 5px 5px;
-      height: 100%;
+      height: auto;
       .main-container {
         .mainBorderStyles;
         .backgroundStyles;
@@ -35,11 +40,20 @@ html {
           .mainBorderStyles;
           border-style: none solid none none;
           border-radius: 0;
+          padding: 10px;
           display: flex;
           flex-flow: column;
           justify-content: space-between;
-          .popGames {
-
+          max-width: 20%;
+          .popular-games-section {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-flow: column wrap;
+            h3{
+              text-align: center;
+              color: #478592;
+            }
           }
         }
         .mainContent {
@@ -83,5 +97,30 @@ html {
         border-radius: 0 0 5px 5px;
       }
     }
+  }
+}
+#popGame1 {
+  img {
+    .responsiveImg;
+  }
+}
+#popGame2 {
+  img {
+    .responsiveImg;
+  }
+}
+#popGame3 {
+  img {
+    .responsiveImg;
+  }
+}
+#popGame4 {
+  img {
+    .responsiveImg;
+  }
+}
+#popGame5 {
+  img {
+    .responsiveImg;
   }
 }
