@@ -14,6 +14,14 @@
   max-width: 100%;
   height: auto;
 }
+.responsiveVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -40,41 +48,7 @@ html {
         display: flex;
         border-radius: 5px 5px 5px 5px;
         height: 80%;
-        .leftMenu {
-          .mainBorderStyles;
-          border-style: none solid none none;
-          border-radius: 0;
-          padding: 10px;
-          display: flex;
-          flex-flow: column;
-          justify-content: space-between;
-          max-width: 20%;
-          .popular-games-section {
-            display: flex;
-            align-items: center;
-            align-content: center;
-            flex-flow: column wrap;
-            h3 {
-              text-align: center;
-              color: #478592;
-            }
-
-            .popGames {
-              width: 60%;
-              padding: 10px;
-            }
-          }
-          .gamePage{
-            display: flex;
-            justify-content: center;
-          }
-          .pricing {
-            h4{
-              align-self: center;
-            }
-            display: flex;
-          }
-        }
+      }
         .mainContent {
           text-align: center;
           display: flex;
@@ -84,6 +58,26 @@ html {
             box-sizing: border-box;
             .companyTitle {
               box-sizing: content-box;
+            }
+          }
+          .content {
+            width: 100%;
+            height: auto;
+            .videoWrapper {
+              position: relative;
+              padding-bottom: 56.25%;
+              padding-top: 25px;
+              height: 0;
+              overflow: hidden;
+              object {
+                .responsiveVideo
+              }
+              embed {
+                .responsiveVideo
+              }
+              iframe {
+                .responsiveVideo
+              }
             }
           }
           .features {
@@ -117,29 +111,3 @@ html {
       }
     }
   }
-}
-#popGame1 {
-  img {
-    .responsiveImg;
-  }
-}
-#popGame2 {
-  img {
-    .responsiveImg;
-  }
-}
-#popGame3 {
-  img {
-    .responsiveImg;
-  }
-}
-#popGame4 {
-  img {
-    .responsiveImg;
-  }
-}
-#popGame5 {
-  img {
-    .responsiveImg;
-  }
-}
