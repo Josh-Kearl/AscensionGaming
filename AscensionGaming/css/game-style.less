@@ -12,13 +12,9 @@
 }
 .responsiveImg {
   max-width: 100%;
-  height: auto;
+  width: 90%;
+  height: 90%;
 }
-* {
-  box-sizing: border-box;
-}
-
-
 
 html {
   margin: 0;
@@ -40,40 +36,29 @@ html {
         display: flex;
         border-radius: 5px 5px 5px 5px;
         height: 80%;
-        .leftMenu {
-          .mainBorderStyles;
-          border-style: none solid none none;
-          border-radius: 0;
-          padding: 10px;
-          display: flex;
-          flex-flow: column;
-          justify-content: space-between;
-          max-width: 20%;
-          .popular-games-section {
-            display: flex;
-            align-items: center;
-            align-content: center;
-            flex-flow: column wrap;
-            h3 {
-              text-align: center;
-              color: #478592;
-            }
-
-            .popGames {
-              width: 60%;
-              padding: 10px;
-            }
-          }
-          .gamePage{
-            display: flex;
-            justify-content: center;
-          }
-        }
         .mainContent {
           text-align: center;
           display: flex;
           flex-flow: column wrap;
           justify-content: space-between;
+          .gameRow {
+            .mainBorderStyles;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            align-content: center;
+            max-height: 30%;
+            margin: 10px;
+            .column {
+              width: 50%;
+              padding: 10px;
+              margin: 10px;
+              box-sizing: content-box;
+              img {
+                .responsiveImg;
+              }
+            }
+          }
           .cover {
             box-sizing: border-box;
             .companyTitle {
@@ -112,28 +97,4 @@ html {
     }
   }
 }
-#popGame1 {
-  img {
-    .responsiveImg;
-  }
-}
-#popGame2 {
-  img {
-    .responsiveImg;
-  }
-}
-#popGame3 {
-  img {
-    .responsiveImg;
-  }
-}
-#popGame4 {
-  img {
-    .responsiveImg;
-  }
-}
-#popGame5 {
-  img {
-    .responsiveImg;
-  }
-}
+
