@@ -99,6 +99,15 @@ html body .backgroundContainer .main-container .mainContent .cover .companyTitle
 html body .backgroundContainer .main-container .mainContent .features {
   box-sizing: border-box;
   margin: 5px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+html body .backgroundContainer .main-container .mainContent .features .streamer-link .mybutton {
+  color: white;
+  background-color: #478592;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
 }
 html body .backgroundContainer header {
   margin: auto;
